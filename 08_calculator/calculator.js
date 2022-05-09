@@ -1,26 +1,50 @@
-const add = function() {
+const add = function(numOne, numTwo) {
+  return numOne + numTwo;
 	
 };
 
-const subtract = function() {
+const subtract = function(numOne, numTwo) {
+	return numOne - numTwo;
+};
+
+const sum = function(array) {
+  let sumResult = 0
+	for (i = 0; i < array.length; i++) {
+    sumResult += array[i];
+  }
+
+  return sumResult;
+
+};
+
+const multiply = function(array) {
+
+  let multiplyResult = 1
+
+  for (i = 0; i < array.length; i++) {
+      multiplyResult *= array[i];
+    } 
+
+    return multiplyResult;
+
+}
+
+const power = function(number, power) {
 	
-};
-
-const sum = function() {
-	
-};
-
-const multiply = function() {
+  return number ** power;
 
 };
 
-const power = function() {
-	
-};
+const factorial = function(number) {
 
-const factorial = function() {
-	
-};
+  let factorialResult = 1
+
+  for (i = 1; i <= number; i++) {
+      factorialResult *= i;
+    }
+
+    return factorialResult;
+}
 
 // Do not edit below this line
 module.exports = {
